@@ -4,7 +4,7 @@ h1 {
     padding-bottom: 15px;
   padding-top: 15px;
     text-align:center;
-    color: white;
+    color: black;
 
 }
 
@@ -27,6 +27,10 @@ header {
     padding: 5px;
 }
 
+img{
+    display:block;
+    margin:auto;
+    }
 
 
 footer {
@@ -78,7 +82,7 @@ main section {
 }
 
 main section:nth-child(2) {
-	display: none;
+	/*display: none;*/
 	margin: 0.5rem;
 }
 
