@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@700&display=swap');
 body {
 	font-size: 16px;
-	
+	background-color: #006D77;
 }
 
 /* phone or baseline views **************************/
@@ -11,7 +11,7 @@ header {
 header,
 footer {
 	
-	background-color: #bed;
+	background-color: #83C5BE;
 	display: flex;
 	flex-flow: column;
 	align-items: center;
@@ -26,12 +26,13 @@ footer {
 	font-family: "Roboto", Ubuntu, sans-serif;
 	max-width: 767px;
 	margin: 0 auto;
+	border-radius: 10px;
 }
 h1 {
 	font-size: 1.1rem;
 }
 h2 {
-	color: #536878;
+	color: #006D77;
 }
 
 nav {
