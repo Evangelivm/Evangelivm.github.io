@@ -34,7 +34,24 @@ h1 {
 h2 {
 	color: #006D77;
 }
-
+th {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+    vertical-align: middle;
+    background-color: #E29578;
+    padding: 0.625em 1.25em;
+    border-right: 1px solid #fff;
+    border-radius: 10px;
+}
+table{
+    border: 1px solid #eae7e2;
+    width: 100%;
+    margin: 1.5em auto;
+}
+td {
+    background-color: #FFDDD2;
+}
 nav {
 	background-color: #36454f;
 	text-align: center;
@@ -140,7 +157,7 @@ footer {
 		font-size: 1.1rem;
 	}
 	main {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr ;
 	}
 	article:nth-child(3) {
 		grid-column: span 1;
