@@ -5,12 +5,10 @@ body {
 }
 
 /* phone or baseline views **************************/
-header {
-	font-family: "Montserrat", Ubuntu, sans-serif;
-}
+
 header,
 footer {
-	
+	font-family: "Roboto", sans-serif;
 	background-color: #83C5BE;
 	display: flex;
 	flex-direction: column;
@@ -30,9 +28,11 @@ main
 }
 h1 {
 	font-size: 1.1rem;
+	font-family: "Montserrat", Ubuntu, sans-serif;
 }
 h3 {
 	color: #006D77;
+	font-family: "Montserrat", Ubuntu, sans-serif;
 }
 
 nav {
