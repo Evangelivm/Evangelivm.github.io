@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@700&display=swap');
+body {
+	background-color: #bbb;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+
+	background-color: #fff;
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+nav
+ {
+	font-family: "Roboto", Ubuntu, sans-serif;
+	max-width: 767px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+header img {
+	width: 80px;
+	height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+    font-family: "Montserrat";
+	font-size: 1.6rem;
+	margin: 0 0 0 17px;
+}
+
+.m {
+	font-family: "Roboto";
+	letter-spacing: 1pt;
+	color: forestgreen;
+	margin-left: 20px;
+	font-size: .9rem;
+}
+
+nav {
+	max-width: 767px;
+	margin: 0 auto;
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, yellow, transparent) top / var(--d, 0) 10px no-repeat;
+  transition: 0.5s;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav a:hover {
+/* 	background-color: #bbb;
+	color: #36454f; */
+	--d: 75%;
+}
+.active {
+	color: yellow;
+}
+
+nav ul li.active a {background-color: rgba(0, 0, 0, 0.2); color:#fff;}
+nav ul li a:hover {background-color: rgba(0, 0, 0, 0.4);}
+nav ul.hide {display: none ;}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Larger viewports */
+@media only screen and (min-width: 32.5em) {
+
+
+	.headings h1 {
+		font-size: 3rem;
+	}
+
+	.m {
+		letter-spacing: 1.5pt;
+		font-size: larger;
+		margin-left: 17px;
+	}
+    nav ul { 
+        display: grid;
+        /*grid-template-columns: repeat(5, 1fr);*/
+        grid-template-columns: repeat(6, minmax(130px, 1fr));
+    }
+}
+
+
