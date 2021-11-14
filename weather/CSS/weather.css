@@ -91,7 +91,7 @@ nav ul.hide {display: none ;}
   }
 
 /* Larger viewports */
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 64em) {
 
 
 	.headings h1 {
@@ -108,6 +108,19 @@ nav ul.hide {display: none ;}
         /*grid-template-columns: repeat(5, 1fr);*/
         grid-template-columns: repeat(6, minmax(130px, 1fr));
     }
+	nav ul li a {padding: .6rem 1rem;}
 }
+@media only screen and (min-width: 35rem) {
 
+    nav button{display: none;}
+    nav ul.hide{display: block;}
+    nav ul {margin-left: 2%;}
+    nav ul li {
+        float:left;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+}
 
