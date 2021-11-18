@@ -4,7 +4,6 @@ body {
 	padding: 0;
 	margin: 0;
 }
-
 header {
 
 	background-color: #83C5BE;
@@ -155,10 +154,7 @@ article{
 	border: 1px solid;
 	padding: .5rem;
 	box-shadow: 0 0 30px #777;
-
-
 }
-
 p.secondline{
   font-size: 13px;
   color: black;
