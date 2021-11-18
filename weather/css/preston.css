@@ -236,7 +236,6 @@ nav ul.hide {display: none ;}
 		height: 252px;
 		margin-right: 0.5%;
 		margin-left: 0.7%;
-		
 	}
 	.panel {
 		padding: 2rem;
@@ -245,7 +244,6 @@ nav ul.hide {display: none ;}
 		margin: 10px;
 		grid-column: 1fr 1fr 1fr 1fr;
 	}
-
 	.herodiv{
 		margin: 10px auto;
 		position: relative;
@@ -316,5 +314,3 @@ nav ul.hide {display: none ;}
         border-right: 1px solid rgba(0, 0, 0, 0.3);
     }
 }
-
-
