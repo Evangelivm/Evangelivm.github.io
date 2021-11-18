@@ -90,7 +90,7 @@ nav a:hover {
 img{
 	width:  auto;
 	height: 252px;
-	display: flex;
+
 }
 .new {
     color: white;
@@ -107,7 +107,7 @@ footer {
 	text-align: center;
 	font-family: Montserrat;
 	background-color: #83C5BE;
-
+	margin :140px 40px 0px 40px;
 	
 }
 .fiveDay table, th, td {
@@ -137,8 +137,8 @@ article{
 	
 }
 .icon {
-	width: 2% ;
-	height: 2% ;
+	width: 15% ;
+	height: 15% ;
 }
 .info{
 	text-align: center;
@@ -215,6 +215,10 @@ nav ul.hide {display: none ;}
 
 /* Larger viewports */
 @media only screen and (min-width: 64em) {
+	.icon {
+		width: 15% ;
+		height: 15% ;
+	}
 	.fiveDay {
 		display: block;
 		text-align: center;
@@ -222,9 +226,8 @@ nav ul.hide {display: none ;}
 		background-color: #83C5BE;
 		padding: 1em;
 		border-radius: 23px;
-		position: relative;
-	  top: 30px;
-	  left: 30px;
+
+	  margin :0px;
 		
 	}
 	.place1{
