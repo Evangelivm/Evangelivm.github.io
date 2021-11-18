@@ -28,3 +28,6 @@ document.querySelector('#date').innerHTML = days[date.getDay()] + ", " + date.ge
 function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("hide");
 }
+if (date.getDay() != 6) {
+    document.getElementById("banner-fridays").style.display = "none"
+}

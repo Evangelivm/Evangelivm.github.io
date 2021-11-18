@@ -81,6 +81,21 @@ nav a:hover {
 .active {
 	color: yellow;
 }
+#banner {
+    background-color: #006D77;
+    max-width: 770px;
+    margin: 0 auto;
+    padding: 1em;
+}
+img{
+	width:  auto;
+	height: 252px;
+	display: flex;
+}
+.new {
+    color: white;
+	font-family: "Roboto";
+}
 footer {
     background-color: #83C5BE;
   text-align: center;
@@ -92,12 +107,13 @@ footer {
 	text-align: center;
 	font-family: Montserrat;
 	background-color: #83C5BE;
-	padding: 1em;
+
+	
 }
 .fiveDay table, th, td {
 	border: 0.4px solid #006D77;
 	border-collapse: collapse;
-	padding: 1em;
+
 }
 .fiveDay table {
 	margin-left: auto;
@@ -109,10 +125,27 @@ th {
 }
 article{
 	background-color:#ccc;
+	border-radius: 10px;
+	padding: 1em;
+}
+.maps{
+	float: left;
+	width: 20% ;
+	height: 20% ;
+	margin-left: 20%;
+	margin-right: auto;
+	
+}
+.icon {
+	width: 2% ;
+	height: 2% ;
+}
+.info{
+	text-align: center;
 }
 .herodiv{
 	margin: auto;
-	position: relative;
+
 	width: 360px;
 	height: 300px;
 }
@@ -122,6 +155,7 @@ article{
 	border: 1px solid;
 	padding: .5rem;
 	box-shadow: 0 0 30px #777;
+
 
 }
 
@@ -158,6 +192,10 @@ p{
 	margin: 10px 0;
 	padding: 5px;
 }
+.article{
+	padding: .9rem;
+	border-radius: 23px;
+}
 
 main {
 	max-width: 1000px;
@@ -177,7 +215,18 @@ nav ul.hide {display: none ;}
 
 /* Larger viewports */
 @media only screen and (min-width: 64em) {
-
+	.fiveDay {
+		display: block;
+		text-align: center;
+		font-family: Montserrat;
+		background-color: #83C5BE;
+		padding: 1em;
+		border-radius: 23px;
+		position: relative;
+	  top: 30px;
+	  left: 30px;
+		
+	}
 	.place1{
 		float: right;
 		width: 20%;
@@ -193,14 +242,7 @@ nav ul.hide {display: none ;}
 		margin: 10px;
 		grid-column: 1fr 1fr 1fr 1fr;
 	}
-	.weathersummary{
 
-		background: radial-gradient(#006D77,#83C5BE);
-		border: 1px solid;
-		padding: .5rem;
-		box-shadow: 0 0 30px #777;
-		opacity: .8;
-	}
 	.herodiv{
 		margin: 10px auto;
 		position: relative;
@@ -210,6 +252,11 @@ nav ul.hide {display: none ;}
 	img{
 		width: 962px;
 		height: 252px;
+	}
+	.fiveDay table, th, td {
+		border: 0.4px solid #006D77;
+		border-collapse: collapse;
+		padding: 1em;
 	}
 	.weathersummary{
 		position: absolute;
@@ -224,9 +271,7 @@ nav ul.hide {display: none ;}
 	.headings h1 {
 		font-size: 3rem;
 	}
-.article{
-	padding: .9rem;
-}
+
 	.m {
 		letter-spacing: 1.5pt;
 		font-size: larger;
@@ -238,6 +283,21 @@ nav ul.hide {display: none ;}
         grid-template-columns: repeat(6, minmax(130px, 1fr));
     }
 	nav ul li a {padding: .6rem 1rem;}
+	.maps{
+		float: left;
+		width: 20% ;
+		height: 20% ;
+		margin-left: 20%;
+		margin-right: auto;
+		
+	}
+	.icon {
+		width: 2% ;
+		height: 2% ;
+	}
+	.info{
+		text-align: center;
+	}
 }
 
 @media only screen and (min-width: 35rem) {
