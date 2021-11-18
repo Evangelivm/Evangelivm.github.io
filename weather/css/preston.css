@@ -69,7 +69,7 @@ nav ul li a {
 	padding: 0.75rem;
 	text-decoration: none;
 	font-size: 0.95rem;
-	background: linear-gradient(90deg, transparent, yellow, transparent) top / var(--d, 0) 10px no-repeat;
+	background: linear-gradient(90deg, transparent, white, transparent) top / var(--d, 0) 10px no-repeat;
   transition: 0.5s;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -87,32 +87,50 @@ footer {
   font-family: "Roboto";
   padding: 0.55px;
 }
-.hero-ph{
-	margin: 10px auto;
-	background-color: #eee;
-	border: 1px solid #333;
-	width: 100%;
-	height: 250px;
+.fiveDay {
+	display: block;
+	text-align: center;
+	font-family: Montserrat;
+	background-color: #83C5BE;
+	padding: 1em;
+}
+.fiveDay table, th, td {
+	border: 0.4px solid #006D77;
+	border-collapse: collapse;
+	padding: 1em;
+}
+.fiveDay table {
+	margin-left: auto;
+	margin-right: auto;
+}
+th {
+	background-color: #BFD7ED;
+
+}
+article{
+	background-color:#ccc;
 }
 .herodiv{
-	margin: 10px auto;
+	margin: auto;
 	position: relative;
-	border: 1px dashed cyan;
-	width: 960px;
+	width: 360px;
 	height: 300px;
 }
 .weathersummary{
-	position: absolute;
-	top: 50px;
-	left: 50px;
-	background: radial-gradient(green, lightgreen);
-	border: 1px solid green;
+
+	background: radial-gradient(#006D77,#83C5BE);
+	border: 1px solid;
 	padding: .5rem;
 	box-shadow: 0 0 30px #777;
+
 }
+
 p.secondline{
   font-size: 13px;
   color: black;
+}
+p{
+	margin: 1px;
 }
 #copyright {
     padding-top: 3px;
@@ -140,6 +158,7 @@ p.secondline{
 	margin: 10px 0;
 	padding: 5px;
 }
+
 main {
 	max-width: 1000px;
 	font-family: "Roboto", serif;
@@ -159,11 +178,55 @@ nav ul.hide {display: none ;}
 /* Larger viewports */
 @media only screen and (min-width: 64em) {
 
+	.place1{
+		float: right;
+		width: 20%;
+		height: 252px;
+		margin-right: 0.5%;
+		margin-left: 0.7%;
+		
+	}
+	.panel {
+		padding: 2rem;
+		background-color: white;
+		border-radius: 10px;
+		margin: 10px;
+		grid-column: 1fr 1fr 1fr 1fr;
+	}
+	.weathersummary{
 
+		background: radial-gradient(#006D77,#83C5BE);
+		border: 1px solid;
+		padding: .5rem;
+		box-shadow: 0 0 30px #777;
+		opacity: .8;
+	}
+	.herodiv{
+		margin: 10px auto;
+		position: relative;
+		width: 960px;
+		height: 300px;
+	}
+	img{
+		width: 962px;
+		height: 252px;
+	}
+	.weathersummary{
+		position: absolute;
+		top: 50px;
+		left: 50px;
+		background: radial-gradient(#006D77,#83C5BE);
+		border: 1px solid;
+		padding: .5rem;
+		box-shadow: 0 0 30px #777;
+		opacity: .8;
+	}
 	.headings h1 {
 		font-size: 3rem;
 	}
-
+.article{
+	padding: .9rem;
+}
 	.m {
 		letter-spacing: 1.5pt;
 		font-size: larger;
