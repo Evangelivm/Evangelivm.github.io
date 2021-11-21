@@ -35,7 +35,12 @@
     <main>
         <h2 class = 'one'>Preston Idaho</h2>
         <div class="herodiv">
-        <div class="hero-ph"><img src="images/landscape.jpg" alt="landscape" class = "landscape"></div>
+        <picture class="hero-ph">
+            <source media ="(max-width: 559px)" srcset="images/small.jpg">
+            <source media ="(max-width: 1023px)" srcset="images/medium.jpg">
+            <source media ="(min-width: 1024px)" srcset="images/large.jpg">
+            <img src="images/original.jpeg" alt="landscape">
+        </picture>
         <section class="weathersummary">
         <h3>Weather Summary </h3>
         <p class = "ind">Currently : <span id="current">38</span>&#176;F </p>

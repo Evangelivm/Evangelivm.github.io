@@ -137,6 +137,13 @@ article{
 	margin-right: auto;
 	
 }
+picture.hero-ph {
+	display: block;
+	width: 96%;
+	margin: 0 2%;
+
+}
+picture.hero-ph img{width: 100%}
 .icon {
 	width: 15% ;
 	height: 15% ;
