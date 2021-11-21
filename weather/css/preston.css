@@ -40,11 +40,13 @@ header img {
 .m {
 	font-family: "Roboto";
 	letter-spacing: 1pt;
-	color: #006D77;
+	color: black;
 	margin-left: 20px;
 	font-size: .9rem;
 }
-
+h3, .ind {
+	color: rgb(255, 255, 255);
+}
 nav {
 	max-width: 967px;
 	margin: 0 auto;

@@ -37,12 +37,11 @@
         <div class="herodiv">
         <div class="hero-ph"><img src="images/landscape.jpg" alt="landscape" class = "landscape"></div>
         <section class="weathersummary">
-        <h3>Weather Summary</h3>
-        <p>Current : Sunny</p>
-        <p>Temperature: 76 &#176;F</p>
-        <p>Humidity: 69%</p>
-        <p>Precipitation: 0 inches</p>
-        <p>Wind Speed: 5 mph</p>
+        <h3>Weather Summary </h3>
+        <p class = "ind">Currently : <span id="current">38</span>&#176;F </p>
+        <p class = "ind">Wind Chill: <span id="sum"></span>&#176;F</p>
+        <p class = "ind">Humidity: 50%</p>
+        <p class = "ind">Wind Speed: <span id="wind">5</span>&#176;F mph</p>
         </section>
   
         
@@ -130,5 +129,6 @@
     </footer>
 
         <script src="js/scripts.js"></script>
+        <script src="js/windchill.js"></script>
 </body>
 </html>
