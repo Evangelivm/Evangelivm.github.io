@@ -56,6 +56,7 @@ nav {
 }
 .one {
 	text-align: center;
+	color: white;
 }
 nav ul {
 	list-style-type: none;
@@ -219,6 +220,77 @@ figure img {
 }
 .gallery:hover {
 	box-shadow: 0 0 50px #333;
+}
+fieldset {
+    border: 1px solid white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+legend {
+    font-family: "Montserrat";
+    padding: .5rem;
+    font-size: 1.1rem;
+	color:white;
+
+}
+
+.top {
+    display: block;
+    font-family: "Roboto";
+    margin-top: 1rem;
+	color: white;
+}
+
+.top input, .top select {
+    display: block;
+    padding: .75rem;
+    width: 90%;
+    max-width: 20rem;
+}
+
+.top input:required {
+    border-left: red solid 6px;
+}
+
+.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.sbs {
+    display: block;
+    font-family: "Roboto";
+    padding: .75rem 0;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    max-width: 20rem;
+    padding: 10px;
+}
+
+.submitBtn {
+    border: none;
+    background-color: var(--accent-2);
+    border-radius: 10px;
+    font-family: var(--header-font);
+    font-size: 1.2rem;
+    padding: 1.6rem;
+    margin: 0 0 1rem 5%;
+}
+
+.thank-you {
+    background-color: var(--accent-1);
+    height: 200px;
+    margin: 20px auto;
+    text-align: center;
+    justify-items: center;
+}
+
+.thank-you h3{
+    padding-top: 85px;
 }
 nav ul li.active a {background-color: rgba(0, 0, 0, 0.2); color:#fff;}
 nav ul li a:hover {background-color: rgba(0, 0, 0, 0.4);}
