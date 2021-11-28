@@ -261,6 +261,7 @@ legend {
     display: block;
     font-family: "Roboto";
     padding: .75rem 0;
+	color: white;
 }
 
 textarea {
@@ -287,6 +288,10 @@ textarea {
     margin: 20px auto;
     text-align: center;
     justify-items: center;
+}
+span{
+	color: white;
+    font-size: 1rem;
 }
 
 .thank-you h3{
