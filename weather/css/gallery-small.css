@@ -294,6 +294,9 @@ span{
 	color: white;
     font-size: 1rem;
 }
+.year,.date{
+	color: black;
+}
 
 .thank-you h3{
     padding-top: 85px;
