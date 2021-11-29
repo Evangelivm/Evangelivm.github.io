@@ -222,9 +222,10 @@ figure img {
 	box-shadow: 0 0 50px #333;
 }
 fieldset {
-    border: 1px solid white;
+    border: 3px solid white;
     padding: 1rem;
     margin-bottom: 1rem;
+	border-radius: 10px;
 }
 
 legend {
@@ -296,6 +297,16 @@ span{
 
 .thank-you h3{
     padding-top: 85px;
+}
+form input.submitbutton {
+    border: none;
+    background-color:#83C5BE;
+    color: black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0 0 2rem 2%;
+    width: 40%;
+    max-width: 100rem;
 }
 nav ul li.active a {background-color: rgba(0, 0, 0, 0.2); color:#fff;}
 nav ul li a:hover {background-color: rgba(0, 0, 0, 0.4);}

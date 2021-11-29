@@ -43,7 +43,7 @@
 
                 <label class="top">Full Name<input type="text" minlength="5" name="fullName" required></label>
                 <label class="top">Email<input type="email" placeholder="name@e-mail.com" name="email"></label>
-                <label class="top">Phone Number<input type="tel" pattern="[0-9]{10}" placeholder="999-999-999" name="phone" required></label>
+                <label class="top">Phone Number<input type="tel" pattern="[0-9]{9}" placeholder="999-999-999" name="phone" required></label>
                 <label class="top">ZIP Code<input type="number" placeholder="123456" pattern=".{5,5}" name="zip" required></label>
             </fieldset>
 
@@ -64,7 +64,7 @@
                         <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                         
                     </label>
-            
+
                     <datalist id="tickmarks">
                         <option value="0">
                         <option value="1">
@@ -84,7 +84,7 @@
                     <option value="Soda Springs">Soda Springs</option>
                     <option value="Fish Haven">Fish Haven</option>
                 </select></label>
-
+            </fieldset>
                 <fieldset>
                     <legend>User in-danger level</legend>
 
@@ -92,8 +92,9 @@
                     <label class="sbs"><input type="radio" name="danger-level" value="maybe"> Maybe</label>
                     <label class="sbs"><input type="radio" name="danger-level" value="no"> No</label>
                 </fieldset>
-
-                <label class="top">Additional information or comments<textarea name="comments" placeholder="Enter text here..." ></textarea></label>
+                <fieldset>
+                    <legend>Additional information or comments</legend>
+                <textarea name="comments" placeholder="Enter text here..." ></textarea>
             </fieldset>
 
             <input class="submitBtn" type="submit" value="Report Storm">
