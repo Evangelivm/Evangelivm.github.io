@@ -132,9 +132,9 @@ article{
 }
 .maps{
 	float: left;
-	width: 20% ;
+	width: 50% ;
 	height: 20% ;
-	margin-left: 20%;
+	margin-left: 2%;
 	margin-right: auto;
 	
 }
@@ -146,7 +146,7 @@ picture.hero-ph {
 }
 picture.hero-ph img{width: 100%}
 .icon {
-	width: 15% ;
+	width: 5% ;
 	height: 15% ;
 }
 .info{
@@ -291,7 +291,7 @@ textarea {
     justify-items: center;
 }
 span{
-	color: white;
+	color: black;
     font-size: 1rem;
 }
 .year,.date{
@@ -311,7 +311,39 @@ form input.submitbutton {
     width: 40%;
     max-width: 100rem;
 }
+.cards {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
 
+.art1 {
+    background-color: #ccc;
+    border: 1px solid rgba(0,0,0,0.5);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+article img {
+    border:1px solid #000080; width: 100%; height: auto;
+    max-width: 100%;
+}
+
+    article div {
+    text-align: center;
+    margin: 0 auto;
+}
+
+    article h2 {
+    font-family: var(--header-font);
+    margin-bottom: 1px;
+}
+
+    .motto {
+    margin-top: 1px;
+    font-family: var(--title-font);
+    margin-bottom: 30px;
+    font-size: .8rem;
+}
 nav ul li.active a {background-color: rgba(0, 0, 0, 0.2); color:#fff;}
 nav ul li a:hover {background-color: rgba(0, 0, 0, 0.4);}
 nav ul.hide {display: none ;}

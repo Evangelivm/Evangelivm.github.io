@@ -74,7 +74,14 @@
         width: 300px;
         order: 1;
     }
-
+    .maps{
+        float: left;
+        width: 50% ;
+        height: 20% ;
+        margin-left: -20%;
+        margin-right: auto;
+        
+    }
     .contacts {
         order: 2;
     }
