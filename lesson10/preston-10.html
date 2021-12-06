@@ -2,14 +2,14 @@
 <html lang = "en-US">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/preston.css">
     <meta name="author" content="Devy Salomon">
         <meta name="description" content="Assignment portal for Devy Salomon in WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <title>Preston</title>
-</head>
+
+    <link href="css/preston.css" rel="stylesheet">
+
 <body>
     <div id="banner-fridays"><h3 class ="new">Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h3></div>
     <header>
@@ -43,31 +43,17 @@
         </picture>
         <section class="weathersummary">
         <h3>Weather Summary </h3>
-        <p class = "ind">Currently : <span id="current">38</span>&#176;F </p>
-        <p class = "ind">Wind Chill: <span id="sum"></span>&#176;F</p>
-        <p class = "ind">Humidity: 50%</p>
-        <p class = "ind">Wind Speed: <span id="wind">5</span>&#176;F mph</p>
+        <p class = "ind">Currently : <span id="current"></span>&#176;F (<span id="description"></span>)</p>
+        <p class = "ind">Wind Chill: <span id="chill"></span>&#176;F</p>
+        <p class = "ind">Humidity: <span id="humid"></span>%</p>
+        <p class = "ind">Wind Speed: <span id="wind"></span>&#176;mph</p>
         </section>
   
         
     </div>
     <div class="fiveDay"><strong>5 Day Forecast</strong><br><br>
-        <table>
-            <tr>
-                <th>Wed</th>
-                <th>Thu</th>
-                <th>Fri</th>
-                <th>Sat</th>
-                <th>Sun</th>
-            </tr>
-            <tr>
-                <td><br>89 &#176;F</td>
-                <td><br>87 &#176;F</td>
-                <td><br>78 &#176;F</td>
-                <td><br>75 &#176;F</td>
-                <td><br>72 &#176;F</td>
-            </tr>
-        </table></div>
+        <div class="forecasts"></div>
+    </div>
     
 
 <br>
