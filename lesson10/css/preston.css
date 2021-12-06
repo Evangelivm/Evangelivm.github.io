@@ -89,9 +89,12 @@ nav {
 }
 
 .forecasts article h3{
-	font-size: .9rem;
+	font-size: .6rem;
 	padding: 0px;
 	color:black;
+}
+.temperature{
+	font-size: .7rem;
 }
 
 nav ul {

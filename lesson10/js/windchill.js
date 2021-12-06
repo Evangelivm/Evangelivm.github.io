@@ -55,6 +55,7 @@ fetch(urlb)
 
             let temp = document.createElement("p");
             temp.innerText = forecasts[i].main.temp + "°F";
+            temp.setAttribute('class', "temperature");
             card.appendChild(temp)
 
             document.querySelector('div.forecasts').appendChild(card);
