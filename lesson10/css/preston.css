@@ -57,6 +57,43 @@ nav {
 .one {
 	text-align: center;
 }
+.forecast {
+	max-width: 700px;
+	background-color: var(--secondary-color);
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(0,0,0,0.5);
+	padding: .5rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.forecasts {
+	display: flex;
+	grid-template-columns: 150px 150px 150px 150px 150px ;
+
+	justify-content: space-evenly;
+	justify-items: center;
+}
+
+.forecasts article {
+	border: 1px solid rgba(0,0,0,0.5);
+	width: 60%;
+	height: 80%;
+	text-align: center;
+}
+.img1{
+	width: 50%;
+	height: 50%;
+}
+
+.forecasts article h3{
+	font-size: .9rem;
+	padding: 0px;
+	color:black;
+}
+
 nav ul {
 	list-style-type: none;
 	margin: 0;
@@ -108,7 +145,7 @@ footer {
 	text-align: center;
 	font-family: Montserrat;
 	background-color: #83C5BE;
-	margin :140px 40px 0px 40px;
+	margin :131px 9px 0px 10px;
 	
 }
 .fiveDay table, th, td {
