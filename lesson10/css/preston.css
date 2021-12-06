@@ -280,6 +280,9 @@ nav ul.hide {display: none ;}
 	  margin :0px;
 		
 	}
+	.temperature{
+		font-size: .9rem;
+	}
 	.place1{
 		float: right;
 		width: 20%;
@@ -425,7 +428,9 @@ nav ul.hide {display: none ;}
 		width: 50%;
 		height: 50%;
 	}
-	
+	.temperature{
+		font-size: .9rem;
+	}
 	.forecasts article h3{
 		font-size: .9rem;
 		padding: 0px;
