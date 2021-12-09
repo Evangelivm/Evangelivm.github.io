@@ -141,6 +141,10 @@ footer {
   font-family: "Roboto";
   padding: 0.55px;
 }
+.events{
+	color:white;
+	text-align: center;
+}
 .fiveDay {
 	display: block;
 	text-align: center;

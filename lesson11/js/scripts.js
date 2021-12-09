@@ -43,6 +43,7 @@ let eventsAPI = "https://byui-cit230.github.io/weather/data/towndata.json"
                     town.events.forEach((value) => {
                         console.log(value)
                         paragraph = document.createElement("p")
+                        paragraph.setAttribute('class', "events");
                         paragraph.innerHTML = value
                         box = document.querySelector("#events")
                         box.appendChild(paragraph)
