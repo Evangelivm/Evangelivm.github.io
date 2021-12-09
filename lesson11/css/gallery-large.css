@@ -15,6 +15,9 @@
 	  margin :0px;
 		
 	}
+	.year,.date{
+		color: black;
+	}
 	.place1{
 		float: right;
 		width: 20%;
