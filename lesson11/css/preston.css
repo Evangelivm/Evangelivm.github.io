@@ -119,9 +119,7 @@ nav a:hover {
 	color: #36454f; */
 	--d: 75%;
 }
-.active {
-	color: yellow;
-}
+
 #banner {
     background-color: #006D77;
     max-width: 770px;
