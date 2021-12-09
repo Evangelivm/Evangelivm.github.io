@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="author" content="Devy Salomon">
+        <meta name="description" content="Assignment portal for Devy Salomon in WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Preston</title>
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <picture>
+            <img src="images/icon.png" alt="The world logo" >
+        </picture>
+        <section class="headings">
+            <h1>Real Weathr Live</h1>
+            <q class="m">Real Weather for Real Situations</q>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick = "toggleMenu()">&#9776;</button>
+        <ul id = "primaryNav" class="">
+            <li class = "active"><a href="#" class="active">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="cards"></div>
+        <article class="info">
+            <div class="map">
+            <img src= "images/map.png" alt = "map of the cities" class="maps">  
+            </div>
+            <div class="contact information">
+            <h4>Contact information</h4>
+            <p>30 N 1st F</p>
+            <p>999 999 999</p>
+            <p>Preston, ID</p>
+            <a href="facebook.com"><img class="icon" src="images/fb.png" alt = "facebook icon"  ></a>
+            
+            <a href="instagram.com"><img class="icon" src="images/inst.png" alt = "instagram icon"></a>
+            
+            <a href="twitter.com"><img class="icon" src="images/twi.png" alt = "twitter icon"></a>
+            </div>  
+        </article>
+    </main>
+    <footer>
+        <p class="firstline">&copy; <span id="year"></span> | Devy Salomon | Lima | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+        <p class="secondline"> Last Updated: <span id="date"></span></p>
+        <a href="https://app.moqups.com/7YPQeX9bU2MWCvnhaYq6qGq4Js441ikV/view/page/ad64222d5">Wireframes</a>
+    </footer>
+
+        <script src="js/script.js"></script>
+
+</body>
+</html>

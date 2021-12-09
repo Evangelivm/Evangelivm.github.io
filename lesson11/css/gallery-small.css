@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@700&display=swap');
+body {
+	background-color: #006D77;
+	padding: 0;
+	margin: 0;
+}
+header {
+
+	background-color: #83C5BE;
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+nav
+ {
+	font-family: "Roboto", Ubuntu, sans-serif;
+	max-width: 767px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+header img {
+	width: 80px;
+	height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+    font-family: "Montserrat";
+	font-size: 1.6rem;
+	margin: 0 0 0 17px;
+}
+
+.m {
+	font-family: "Roboto";
+	letter-spacing: 1pt;
+	color: black;
+	margin-left: 20px;
+	font-size: .9rem;
+}
+h3, .ind {
+	color: rgb(255, 255, 255);
+}
+nav {
+	max-width: 967px;
+	margin: 0 auto;
+	background-color: #36454f;
+	text-align: center;
+	box-shadow: 0 2px 15px gray;
+}
+.one {
+	text-align: center;
+	color: white;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+	background: linear-gradient(90deg, transparent, white, transparent) top / var(--d, 0) 10px no-repeat;
+  transition: 0.5s;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav a:hover {
+/* 	background-color: #bbb;
+	color: #36454f; */
+	--d: 75%;
+}
+.active {
+	color: yellow;
+}
+#banner {
+    background-color: #006D77;
+    max-width: 770px;
+    margin: 0 auto;
+    padding: 1em;
+}
+img{
+	width:  auto;
+	height: 252px;
+
+}
+.new {
+    color: white;
+	font-family: "Roboto";
+}
+footer {
+    background-color: #83C5BE;
+  text-align: center;
+  font-family: "Roboto";
+  padding: 0.55px;
+}
+.fiveDay {
+	display: block;
+	text-align: center;
+	font-family: Montserrat;
+	background-color: #83C5BE;
+	margin :140px 40px 0px 40px;
+	
+}
+.fiveDay table, th, td {
+	border: 0.4px solid #006D77;
+	border-collapse: collapse;
+
+}
+.fiveDay table {
+	margin-left: auto;
+	margin-right: auto;
+}
+th {
+	background-color: #BFD7ED;
+
+}
+article{
+	background-color:#ccc;
+	border-radius: 10px;
+	padding: 1em;
+}
+.maps{
+	float: left;
+	width: 20% ;
+	height: 20% ;
+	margin-left: 20%;
+	margin-right: auto;
+	
+}
+picture.hero-ph {
+	display: block;
+	width: 96%;
+	margin: 0 2%;
+
+}
+picture.hero-ph img{width: 100%}
+.icon {
+	width: 15% ;
+	height: 15% ;
+}
+.info{
+	text-align: center;
+}
+.herodiv{
+	margin: auto;
+
+	width: 360px;
+	height: 300px;
+}
+.weathersummary{
+
+	background: radial-gradient(#006D77,#83C5BE);
+	border: 1px solid;
+	padding: .5rem;
+	box-shadow: 0 0 30px #777;
+}
+p.secondline{
+  font-size: 13px;
+  color: black;
+}
+p{
+	margin: 1px;
+}
+#copyright {
+    padding-top: 3px;
+    padding-left: 75px;
+    color: black;
+    font-weight: bold;
+    color: white;
+}
+
+#dateModified{
+    color: white;
+    font-weight: 200;
+    padding-left: 170px;
+  
+}
+.panel {
+	padding: 2rem;
+	background-color: white;
+	border-radius: 10px;
+	margin: 10px;
+}
+.contentbox {
+	background-color: #ccc;
+	border: 1px dashed;
+	margin: 10px 0;
+	padding: 5px;
+}
+.article{
+	padding: .9rem;
+	border-radius: 23px;
+}
+
+main {
+	max-width: 1000px;
+	font-family: "Roboto", serif;
+	margin: 0 auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 2em;
+    padding: 20px;
+}
+figure img {
+    width: 100%;
+    height: 80%;
+}
+.gallery:hover {
+	box-shadow: 0 0 50px #333;
+}
+fieldset {
+    border: 3px solid white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+	border-radius: 10px;
+}
+
+legend {
+    font-family: "Montserrat";
+    padding: .5rem;
+    font-size: 1.1rem;
+	color:white;
+
+}
+
+.top {
+    display: block;
+    font-family: "Roboto";
+    margin-top: 1rem;
+	color: white;
+}
+
+.top input, .top select {
+    display: block;
+    padding: .75rem;
+    width: 90%;
+    max-width: 20rem;
+}
+
+.top input:required {
+    border-left: red solid 6px;
+}
+
+.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.sbs {
+    display: block;
+    font-family: "Roboto";
+    padding: .75rem 0;
+	color: white;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    max-width: 20rem;
+    padding: 10px;
+}
+
+.submitBtn {
+    border: none;
+    background-color: var(--accent-2);
+    border-radius: 10px;
+    font-family: var(--header-font);
+    font-size: 1.2rem;
+    padding: 1.6rem;
+    margin: 0 0 1rem 5%;
+}
+
+.thank-you {
+    background-color: var(--accent-1);
+    height: 200px;
+    margin: 20px auto;
+    text-align: center;
+    justify-items: center;
+}
+span{
+	color: white;
+    font-size: 1rem;
+}
+.year,.date{
+	color: black;
+}
+
+.thank-you h3{
+    padding-top: 85px;
+}
+form input.submitbutton {
+    border: none;
+    background-color:#83C5BE;
+    color: black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0 0 2rem 2%;
+    width: 40%;
+    max-width: 100rem;
+}
+nav ul li.active a {background-color: rgba(0, 0, 0, 0.2); color:#fff;}
+nav ul li a:hover {background-color: rgba(0, 0, 0, 0.4);}
+nav ul.hide {display: none ;}
+
+
+
+
+
