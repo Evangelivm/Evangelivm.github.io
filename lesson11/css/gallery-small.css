@@ -58,6 +58,9 @@ nav {
 	text-align: center;
 	color: white;
 }
+.year,.date{
+	color: black;
+}
 nav ul {
 	list-style-type: none;
 	margin: 0;
