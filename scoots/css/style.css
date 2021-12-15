@@ -22,12 +22,19 @@ nav
 }
 h2{
 	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
 }
 header img {
 	width: 80px;
 	height: auto;
 }
-
+.rental{
+	text-align: left;
+}
+.icon{
+	text-align: right;
+}
 .headings {
 	display: flex;
 	flex-direction: column;
@@ -47,7 +54,7 @@ header img {
 	font-size: .9rem;
 }
 h3, .ind {
-	color: rgb(255, 255, 255);
+	color: black;
 	text-align:center;
 }
 nav {
@@ -140,7 +147,7 @@ img{
 	font-family: "Roboto";
 }
 footer {
-    background-color: #83C5BE;
+    background-color: #e97027;
   text-align: center;
   font-family: "Roboto";
   padding: 0.55px;
@@ -153,7 +160,7 @@ footer {
 	display: block;
 	text-align: center;
 	font-family: Montserrat;
-	background-color: #f4cc2c;
+	background-color: #a64c19;
 	margin :131px 9px 0px 10px;
 	
 }
@@ -171,7 +178,7 @@ th {
 
 }
 article{
-	background-color:#ccc;
+	background-color:#f4cc2c;
 	border-radius: 10px;
 	padding: 0.1em;
 }
@@ -181,7 +188,7 @@ article{
 	padding: 1em;
 }
 .maps{
-	float: left;
+	float: right;
 	width: 20% ;
 	height: 20% ;
 	margin-left: 20%;
@@ -198,13 +205,14 @@ picture.hero-ph img{
 	width: 100%
 	 
 }
+
 .icon {
 	width: 15% ;
 	height: 15% ;
 
 }
 .info{
-	text-align: center;
+	text-align: right;
 }
 .herodiv{
 	margin: auto;
@@ -225,6 +233,7 @@ p.secondline{
 }
 p{
 	margin: 1px;
+	text-align: center;
 }
 #copyright {
     padding-top: 3px;
@@ -283,7 +292,7 @@ nav ul.hide {display: none ;}
 		display: block;
 		text-align: center;
 		font-family: Montserrat;
-		background-color: #f4cc2c;
+		background-color: #a64c19;
 		padding: 2em;
 		border-radius: 23px;
 
@@ -307,6 +316,9 @@ nav ul.hide {display: none ;}
 		margin: 10px;
 
 	}
+	strong{
+		color: white;
+	}
 	.herodiv{
 		margin: 10px auto;
 		position: relative;
@@ -316,6 +328,7 @@ nav ul.hide {display: none ;}
 	img{
 		width: 962px;
 		height: 252px;
+
 	}
 	.img1{
 		width: 50%;
@@ -380,12 +393,12 @@ nav ul.hide {display: none ;}
     }
 	nav ul li a {padding: .6rem 1rem;}
 	.maps{
-		float: left;
+		float: right;
 		width: 20% ;
 		height: 20% ;
 		margin-left: 20%;
-		margin-right: auto;
-		
+		margin-right: 10%;
+		border: 3px solid;
 	}
 	.icon {
 		width: 2% ;
@@ -445,5 +458,8 @@ nav ul.hide {display: none ;}
 		font-size: .9rem;
 		padding: 0px;
 		color:black;
+	}
+	.info{
+		text-align: right;
 	}
 }

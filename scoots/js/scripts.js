@@ -28,9 +28,7 @@ document.querySelector('#date').innerHTML = days[date.getDay()] + ", " + date.ge
 function toggleMenu(){
     document.getElementById("primaryNav").classList.toggle("hide");
 }
-if (date.getDay() != 5) {
-    document.getElementById("banner-fridays").style.display = "none"
-}
+
 let eventsAPI = "https://byui-cit230.github.io/weather/data/towndata.json"
 
     fetch(eventsAPI).then((response) => response.json())

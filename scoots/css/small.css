@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@700&display=swap');
 body {
-	background-color: #006D77;
+	background-color: #f4cc2c;
 	padding: 0;
 	margin: 0;
 }
 header {
 
-	background-color: #83C5BE;
+	background-color: #f4cc2c;
 	padding: 5px 0;
 	display: flex;
 	align-items:center;
@@ -50,9 +50,9 @@ h3, .ind {
 nav {
 	max-width: 967px;
 	margin: 0 auto;
-	background-color: #36454f;
+	background-color: #e97027;
 	text-align: center;
-	box-shadow: 0 2px 15px gray;
+	box-shadow: 2px  0.1px 7px 6px #3a2e26;
 }
 .one {
 	text-align: center;
@@ -317,7 +317,7 @@ form input.submitbutton {
 }
 
 .art1 {
-    background-color: #ccc;
+    background-color: #f4cc2c;
     border: 1px solid rgba(0,0,0,0.5);
     padding: 1.5rem;
     margin-bottom: 2rem;
