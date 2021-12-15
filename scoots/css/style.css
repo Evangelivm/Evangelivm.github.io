@@ -140,6 +140,7 @@ nav a:hover {
 img{
 	width:  auto;
 	height: 252px;
+	
 
 }
 .new {
@@ -193,6 +194,8 @@ article{
 	height: 20% ;
 	margin-left: 20%;
 	margin-right: auto;
+	border: 3px solid;
+	
 	
 }
 picture.hero-ph {
@@ -202,9 +205,10 @@ picture.hero-ph {
 
 }
 picture.hero-ph img{
-	width: 100%
-	 
+	width: 100%;
+	border: 3px solid;
 }
+
 
 .icon {
 	width: 15% ;
@@ -291,7 +295,7 @@ nav ul.hide {display: none ;}
 	.fiveDay {
 		display: block;
 		text-align: center;
-		font-family: Montserrat;
+		font-family: "Montserrat";
 		background-color: #a64c19;
 		padding: 2em;
 		border-radius: 23px;
@@ -328,6 +332,7 @@ nav ul.hide {display: none ;}
 	img{
 		width: 962px;
 		height: 252px;
+		
 
 	}
 	.img1{
