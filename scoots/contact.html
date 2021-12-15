@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Devy Salomon">
+        <meta name="description" content="Assignment portal for Devy Salomon in WDD 230: Web Frontend Development at Brigham Young University - Idaho.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Storm Center</title>
+
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/gallery-small.css" rel="stylesheet">
+        <link href="css/gallery-medium.css" rel="stylesheet">
+        <link href="css/gallery-large.css" rel="stylesheet">
+</head>
+<body>
+    <div id="banner-fridays"><h3 class ="new">Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h3></div>
+    <header>
+        <picture>
+            <img src="images/icon.png" alt="The world logo" >
+        </picture>
+        <section class="headings">
+            <h1>~Scoots</h1>
+            <q class="m">Rent a scooter, rent an adventure</q>
+        </section>
+    </header>
+    <nav class="clearfix">
+        <button onclick = "toggleMenu()">&#9776;</button>
+        <ul id = "primaryNav" class="">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li class = "active"><a href="#">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class = 'one'>Storm Center Application</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label class="top">Full Name<input type="text" minlength="5" name="fullName" required></label>
+                <label class="top">Email<input type="email" placeholder="name@e-mail.com" name="email"></label>
+                <label class="top">Phone Number<input type="tel" pattern="[0-9]{9}" placeholder="999-999-999" name="phone" required></label>
+                <label class="top">ZIP Code<input type="number" placeholder="123456" name="zip" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+
+                <label class="top">Storm Date<input type="date" name="storm-date"></label>
+                <label class="top">Storm Type<input list="storm-types" name="storm-type"></label>
+                    <datalist id="storm-types">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                    <label class="top" for="rating">Storm severity: &nbsp;&nbsp;&nbsp;
+                        <span id="ratingvalue">5</span>
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        
+                    </label>
+
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                <label class="top">Storm Region<select name="region">
+                    <option value="" disabled selected>Select a Region</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda Springs">Soda Springs</option>
+                    <option value="Fish Haven">Fish Haven</option>
+                </select></label>
+            </fieldset>
+                <fieldset>
+                    <legend>User in-danger level</legend>
+
+                    <label class="sbs"><input type="radio" name="danger-level" value="yes"> Yes</label>
+                    <label class="sbs"><input type="radio" name="danger-level" value="maybe"> Maybe</label>
+                    <label class="sbs"><input type="radio" name="danger-level" value="no"> No</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional information</legend>
+                    <label class="top" for="addinfo">Comments<textarea id="addinfo" name="addinfo" rows="5" cols="35"></textarea></label>
+            </fieldset>
+
+            <input class="submitbutton" type="submit" value="Report Storm">
+        </form>
+        <article class="info">
+            <div class="map">
+            <img src= "images/map.png" alt = "map of the cities" class="maps">  
+            </div>
+            <div class="contact information">
+            <h4>Contact information</h4>
+            <p>30 N 1st F</p>
+            <p>999 999 999</p>
+            <p>Preston, ID</p>
+            <a href="facebook.com"><img class="icon" src="images/fb.png" alt = "facebook icon"  ></a>
+            
+            <a href="instagram.com"><img class="icon" src="images/inst.png" alt = "instagram icon"></a>
+            
+            <a href="twitter.com"><img class="icon" src="images/twi.png" alt = "twitter icon"></a>
+            </div>  
+        </article>
+    </main>
+    <footer>
+        <p class="firstline">&copy; <span id="year" class ="year"></span> | Devy Salomon | Lima | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+        <p class="secondline"> Last Updated: <span id="date" class="date"></span></p>
+
+    </footer>
+
+        <script src="js/scripts.js"></script>
+        <script src="js/stormcenter.js"></script>
+</body>
+</html>
