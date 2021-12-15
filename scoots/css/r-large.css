@@ -63,6 +63,11 @@
 		font-size: 3rem;
 	}
 
+	.mapimg{
+		height: 200px;
+	
+	}
+
 	.m {
 		letter-spacing: 1.5pt;
 		font-size: larger;
@@ -71,7 +76,7 @@
     nav ul { 
         display: grid;
         /*grid-template-columns: repeat(5, 1fr);*/
-        grid-template-columns: repeat(6, minmax(130px, 1fr));
+        grid-template-columns: repeat(5, minmax(130px, 1fr));
     }
 	nav ul li a {padding: .6rem 1rem;}
 	.maps{

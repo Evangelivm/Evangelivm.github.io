@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@700&display=swap');
 body {
-	background-color: #006D77;
+	background-color:#a64c19;
 	padding: 0;
 	margin: 0;
 }
 header {
 
-	background-color: #83C5BE;
+	background-color: #a64c19;
 	padding: 5px 0;
 	display: flex;
 	align-items:center;
@@ -20,7 +20,10 @@ nav
 	margin: 0 auto;
 	border-radius: 10px;
 }
-
+.lines {
+	color: white;
+	text-align: center;
+}
 header img {
 	width: 80px;
 	height: auto;
@@ -40,7 +43,7 @@ header img {
 .m {
 	font-family: "Roboto";
 	letter-spacing: 1pt;
-	color: black;
+	color: white;
 	margin-left: 20px;
 	font-size: .9rem;
 }
@@ -50,7 +53,7 @@ h3, .ind {
 nav {
 	max-width: 967px;
 	margin: 0 auto;
-	background-color: #36454f;
+	background-color: #e97027;
 	text-align: center;
 	box-shadow: 0 2px 15px gray;
 }
@@ -102,7 +105,7 @@ img{
 	font-family: "Roboto";
 }
 footer {
-    background-color: #83C5BE;
+    background-color: #e97027;
   text-align: center;
   font-family: "Roboto";
   padding: 0.55px;
@@ -278,9 +281,9 @@ textarea {
 
 .submitBtn {
     border: none;
-    background-color: var(--accent-2);
+    background-color: #e97027;
     border-radius: 10px;
-    font-family: var(--header-font);
+    font-family: "Montserrat";
     font-size: 1.2rem;
     padding: 1.6rem;
     margin: 0 0 1rem 5%;
@@ -292,6 +295,10 @@ textarea {
     margin: 20px auto;
     text-align: center;
     justify-items: center;
+}
+.mapimg{
+	height: 200px;
+	width: 60%;
 }
 span{
 	color: white;
@@ -306,7 +313,7 @@ span{
 }
 form input.submitbutton {
     border: none;
-    background-color:#83C5BE;
+    background-color:#e97027;
     color: black;
     border-radius: 0.5rem;
     padding: 1rem;

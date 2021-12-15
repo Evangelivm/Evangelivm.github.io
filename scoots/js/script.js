@@ -43,11 +43,11 @@ fetch(requestURL)
             data.appendChild(full);
 
             let whalf = document.createElement('p');
-            whalf.textContent = "Reservation Half Day(3 hrs): " + model[i].walkhalf;
+            whalf.textContent = "Walk-In Half Day(3 hrs): " + model[i].walkhalf;
             data.appendChild(whalf);
 
             let wfull = document.createElement('p');
-            wfull.textContent = "Reservation Full Day: " + model[i].walkfull;
+            wfull.textContent = "Walk-In Full Day: " + model[i].walkfull;
             data.appendChild(wfull);
             
 
