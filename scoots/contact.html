@@ -8,7 +8,6 @@
 
     <title>Contact</title>
 
-        <link href="css/normalize.css" rel="stylesheet">
         <link href="css/r-small.css" rel="stylesheet">
         <link href="css/r-medium.css" rel="stylesheet">
         <link href="css/r-large.css" rel="stylesheet">
@@ -34,7 +33,7 @@
         </ul>
     </nav>
     <main>
-        <h2 class = 'one'>Contact with Us</h2>
+        <h2 class = 'one'>If you are interested in our services or would like to know more about our benefits or prices. You can write to us here, as well as tell us about our addresses.</h2>
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Complete This Form</Form></legend>
@@ -42,11 +41,13 @@
                 <label class="top">Full Name<input type="text" minlength="5" name="fullName" required></label>
                 <label class="top">Email<input type="email" placeholder="name@e-mail.com" name="email"></label>
                 <label class="top" for="addinfo">Comments<textarea id="addinfo" name="addinfo" rows="5" cols="35"></textarea></label>
+                <br>
+                <input class="submitbutton" type="submit" value="Submit">
             </fieldset>
 
             
 
-            <input class="submitbutton" type="submit" value="Report Storm">
+            
         </form>
         <article class="info">
             <div class="map">
@@ -72,12 +73,12 @@
         </article>
     </main>
     <footer>
-        <p class="firstline">&copy; <span id="year"></span> | ~Scoots |</p>
-        <p class="secondline"> Last Updated: <span id="date"></span></p>
+        <p class="firstline">&copy; <span id="year" class="year"></span> | ~Scoots |</p>
+        <p class="secondline"> Last Updated: <span id="date" class="date"></span></p>
 
     </footer>
 
         <script src="js/scripts.js"></script>
-        <script src="js/windchill-preston.js"></script>
+
 </body>
 </html>

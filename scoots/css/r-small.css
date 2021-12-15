@@ -132,7 +132,7 @@ th {
 
 }
 article{
-	background-color:#ccc;
+	background-color:#f4cc2c;
 	border-radius: 10px;
 	padding: 1em;
 }
@@ -217,8 +217,9 @@ main {
 .grid {
     display: grid;
     grid-template-columns: 1fr ;
-    grid-gap: 2em;
+    grid-gap: 4em;
     padding: 20px;
+	margin-bottom: 97px;
 }
 figure img {
     width: 100%;
@@ -313,11 +314,11 @@ span{
 }
 form input.submitbutton {
     border: none;
-    background-color:#e97027;
+    background-color:#df9e75;
     color: black;
     border-radius: 0.5rem;
     padding: 1rem;
-    margin: 0 0 2rem 2%;
+    margin: auto;
     width: 40%;
     max-width: 100rem;
 }
