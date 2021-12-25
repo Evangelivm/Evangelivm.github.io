@@ -1,0 +1,28 @@
+@media only screen and (min-width: 35em) {
+
+    nav button{display: none;}
+    nav ul.hide{display: block;}
+    nav ul {margin-left: 2%;}
+    nav ul li {
+        float:left;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    .year,.date{
+        color: black;
+    }
+
+    figure img {
+        width: 100%;
+        height: 80%;
+    }
+    .gallery:hover {
+        box-shadow: 0 0 50px #333;
+    }
+    .grid {
+
+        grid-template-columns: 1fr 1fr ;
+    }
+}
