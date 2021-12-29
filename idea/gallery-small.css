@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@700&display=swap');
 body {
-	background-color: #006D77;
+	background-color: #244F26;
 	padding: 0;
 	margin: 0;
 }
 header {
 
-	background-color: #83C5BE;
+	background-color: White;
 	padding: 5px 0;
 	display: flex;
 	align-items:center;
@@ -30,12 +30,32 @@ header img {
 	display: flex;
 	flex-direction: column;
 }
-
+td:hover {
+	text-align: center;
+	background: linear-gradient(90deg,transparent, white, transparent) top/ var(--d,0) 10px no-repeat;
+	background-color: #1EFC1E;
+}
 .headings h1 {
     font-family: "Montserrat";
 	font-size: 1.6rem;
 	margin: 0 0 0 17px;
 }
+.box {
+	width: 341px;
+	height: 324px;
+	;
+	color: white;
+  }
+  
+  #one {
+	position: fixed;
+
+	top: 354px;
+	left: 400px;
+	background: #149911;
+	border-radius: 10px ;
+  }
+  
 
 .m {
 	font-family: "Roboto";
@@ -66,6 +86,9 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+}
+.data{
+	text-align: left;
 }
 nav ul li a {
 	display: block;
@@ -116,9 +139,13 @@ footer {
 	
 }
 .fiveDay table, th, td {
-	border: 0.4px solid #006D77;
+	text-align: center;
+	border: 2.4px solid #256D1B;
 	border-collapse: collapse;
-
+	border-radius: 10px;
+	margin-top: auto;
+	background-color: #149911;
+	width: 100px;
 }
 .fiveDay table {
 	margin-left: auto;
@@ -155,7 +182,7 @@ picture.hero-ph img{width: 100%}
 .info{
 	text-align: center;
 }
-.herodiv{
+.hero{
 	margin: auto;
 
 	width: 360px;
@@ -174,6 +201,23 @@ p.secondline{
 }
 p{
 	margin: 1px;
+}
+.total{
+	border: 7px solid white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+	border-radius: 10px;
+	width: 295px;
+	margin-left: 0px ;
+}
+.total2{
+	border: 7px solid white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+	border-radius: 10px;
+	width: 295px;
+	margin-left: 0px ;
+	height: 197px;
 }
 #copyright {
     padding-top: 3px;
@@ -225,10 +269,12 @@ figure img {
 	box-shadow: 0 0 50px #333;
 }
 fieldset {
-    border: 3px solid white;
+    border: 7px solid white;
     padding: 1rem;
     margin-bottom: 1rem;
 	border-radius: 10px;
+	width: 408px;
+	margin-left: 500px ;
 }
 
 legend {
@@ -311,7 +357,7 @@ form input.submitbutton {
     border-radius: 0.5rem;
     padding: 1rem;
     margin: 0 0 2rem 2%;
-    width: 40%;
+    width: 320px;
     max-width: 100rem;
 }
 nav ul li.active a {background-color: rgba(0, 0, 0, 0.2); color:#fff;}

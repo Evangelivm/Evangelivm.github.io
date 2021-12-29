@@ -44,11 +44,7 @@
 		height: 252px;
 	}
 
-	.fiveDay table, th, td {
-		border: 0.4px solid #006D77;
-		border-collapse: collapse;
-		padding: 1em;
-	}
+
 	.weathersummary{
 		position: absolute;
 		top: 50px;
@@ -71,7 +67,7 @@
     nav ul { 
         display: grid;
         /*grid-template-columns: repeat(5, 1fr);*/
-        grid-template-columns: repeat(6, minmax(130px, 1fr));
+        grid-template-columns: repeat(4, minmax(130px, 1fr));
     }
 	nav ul li a {padding: .6rem 1rem;}
 	.maps{
@@ -101,5 +97,9 @@
 
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+
+
+
 
 }
