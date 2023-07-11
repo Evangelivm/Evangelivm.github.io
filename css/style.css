@@ -49,6 +49,13 @@ img {
   gap: 4.5rem;
 }
 
+.card__body2 {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 .card__body__platform {
   align-self: center;
   padding: 1rem;
@@ -101,13 +108,13 @@ img {
 .card__middle {
   display: flex;
   padding: 1rem;
-  margin-top: auto;
+  /*margin-top: auto;*/
 }
 
 .card__footer {
   display: flex;
   padding: 1rem;
-  margin-top: auto;
+  /*margin-top: auto;*/
 }
 
 .user {
@@ -227,3 +234,6 @@ h1 {
   opacity: 1;
 }
 
+p{
+  font-size: 0.83em;
+}
