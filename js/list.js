@@ -1,26 +1,55 @@
-fetch("data.json")
-  .then(response => response.json())
-  .then(data => {
-    const container = document.querySelector('.container');
-    const currentURL = window.location.href;
-    const url = new URL(currentURL);
-    const searchParams = new URLSearchParams(url.search);
-    const categoryValue = searchParams.get("category");
-    const genreValue = searchParams.get("genre");
-    const platformValue = searchParams.get("platform");
-    data.result.forEach(item => {
-      if (searchParams.get("category") !== null && item.title.toLowerCase().includes(categoryValue.toLowerCase())) {
+const currentURL = window.location.href;
+const urlOne = new URL(currentURL);
+const searchParams = new URLSearchParams(urlOne.search);
+const categoryValue = searchParams.get("category");
+const genreValue = searchParams.get("genre");
+const platformValue = searchParams.get("platform");
+const container = document.querySelector('.container');
+
+try {
+  if (categoryValue !== null) {
+    const categoryURL = `https://streaming-availability.p.rapidapi.com/v2/search/title?title=${categoryValue}&country=us&show_type=movie&output_language=en`;
+    const categoryOptions = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '84b6a14863msh1ef8faf1704eeccp1c1c7djsn55f4804b3864',
+        'X-RapidAPI-Host': 'streaming-availability.p.rapidapi.com'
+      }
+    };
+
+    const categoryResponse = await fetch(categoryURL, categoryOptions);
+    const categoryData = await categoryResponse.json();
+
+    categoryData.result.forEach(item => {
+      createCard(item, container);
+    });
+  }
+
+  if (platformValue !== null || genreValue !== null) {
+    const searchURL = 'https://streaming-availability.p.rapidapi.com/v2/search/basic?country=us&services=netflix%2Cprime%2Cdisney%2Capple&output_language=en&show_type=movie&show_original_language=en';
+    const searchOptions = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '84b6a14863msh1ef8faf1704eeccp1c1c7djsn55f4804b3864',
+        'X-RapidAPI-Host': 'streaming-availability.p.rapidapi.com'
+      }
+    };
+
+    const searchResponse = await fetch(searchURL, searchOptions);
+    const searchData = await searchResponse.json();
+
+    searchData.result.forEach(item => {
+      if (platformValue !== null && item.streamingInfo && item.streamingInfo.us && item.streamingInfo.us[platformValue]) {
         createCard(item, container);
-      } else if (searchParams.get("platform") !== null && item.streamingInfo && item.streamingInfo.us && item.streamingInfo.us[platformValue]) {
-        createCard(item, container);
-      } else if (searchParams.get("genre") !== null && item.genres[0]['name'].toLowerCase().includes(genreValue.toLowerCase())) {
+      } else if (genreValue !== null && item.genres[0]['name'].toLowerCase().includes(genreValue.toLowerCase())) {
         createCard(item, container);
       }
     });
-  })
-  .catch(error => {
-    console.error('Error loading JSON:', error);
-  });
+  }
+} catch (error) {
+  console.error(error);
+}
+
 
 function createCard(item, container) {
   // Create the <div class="card"> element
