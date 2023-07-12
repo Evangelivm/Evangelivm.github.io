@@ -24,6 +24,7 @@ body {
   max-width: 1200px;
   margin-block: 2rem;
   gap: 2rem;
+  padding-bottom: 4em;
 }
 
 img {
@@ -108,12 +109,15 @@ img {
 .card__middle {
   display: flex;
   padding: 1rem;
+  padding-bottom: 0px;
+  padding-top: 0px;
   /*margin-top: auto;*/
 }
 
 .card__footer {
   display: flex;
   padding: 1rem;
+  padding-bottom: 30px;
   /*margin-top: auto;*/
 }
 
@@ -143,7 +147,7 @@ img {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 20px;
-  grid-row-gap: 89px;
+  grid-row-gap: 60px;
   justify-items: center;
   align-items: center;
 }

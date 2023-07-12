@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Platform Tracker | Home</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <script src="js/main.js" type="module"></script>
+    <script src="/js/main.js" type="module"></script>
+    <script src="/js/result.js" type="module"></script>
   </head>
   <body>
     <header>
@@ -19,8 +20,8 @@
           <h1>Movie platform tracker</h1>
           <p>Search for the movie of your choice</p>
           <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button>Search</button>
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button">Search</button>
           </div>
         </div>
       </div>
@@ -55,12 +56,10 @@
         <div class="card__body__platform">
           <h4>Search by Platform</h4>
           <div class="parent">
-            <a href="result/index.html"><img src="image/apple-tv-logo-0.png" alt="Apple TV+"></a>
-            <a href="https://www.google.com"><img src="image/disney-plus-logo-0.png" alt="Disney+"></a>
-            <a href="https://www.google.com"><img src="image/Image Pasted 2023-17-06 at 13.14.33.png" alt="Hulu"></a>
-            <a href="https://www.google.com"><img src="image/paramount-plus-logo-0.png" alt="Paramount+"></a>
-            <a href="https://www.google.com"><img src="image/prime-video-logo-0.png" alt="Amazon Prime Video"></a>
-            <a href="https://www.google.com"><img src="image/pngwing.com.png" alt="Netflix"></a>
+            <a href="result/index.html?category=apple"><img src="image/apple-tv-logo-0.png" alt="Apple TV+"></a>
+            <a href="result/index.html?category=disney"><img src="image/disney-plus-logo-0.png" alt="Disney+"></a>
+            <a href="result/index.html?category=prime"><img src="image/prime-video-logo-0.png" alt="Amazon Prime Video"></a>
+            <a href="result/index.html?category=netflix"><img src="image/pngwing.com.png" alt="Netflix"></a>
           </div>
         </div>
       </div>
