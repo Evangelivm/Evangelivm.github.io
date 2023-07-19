@@ -1,4 +1,4 @@
-import { createCard } from "./cards";
+import { createCard } from "./cards.js";
 
 const currentURL = window.location.href;
 const urlOne = new URL(currentURL);
