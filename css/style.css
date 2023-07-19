@@ -264,19 +264,19 @@ p{
   grid-column: 4;
   grid-row: 1;
 }
-a {
+.specific {
   position: relative;
   background-color: transparent;
   transition: background-color .1s ease;
   z-index: 0;
 }
 
-a:hover {
+.specific:hover {
   background-color: transparent;
   box-shadow: 0 5px 15px rgba(175, 224, 245, 0.5);
 }
 
-a:hover::after {
+.specific:hover::after {
   content: "";
   position: absolute;
   top: -5px;
@@ -292,14 +292,77 @@ a:hover::after {
 
 
 .my-header {
-  background-color: #f2f2f2;
-  padding: 20px;
+  display: grid; /* Add grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Create three equal columns */
+  background-color: transparent;
+  padding: 0 0 0 10px;
   text-align: center;
-  height: 102px;
-
+  height: 74px;
+  border-bottom: 2px solid black;
 }
 
 .my-header__title {
   margin: 0;
-  color: #333;
+  color: black;
+  font-size: 50px;
+}
+
+.my-header__title2{
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: right;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.my-header__link{
+  text-decoration: none; /* Elimina el subrayado */
+  color: #000; /* Cambia el color del enlace (puedes ajustar el valor al que desees) */
+  
+}
+
+
+/* Estilos para el panel de favoritos */
+.favorites-panel {
+  display: none;
+  /* Agrega aquí estilos para personalizar el panel */
+  /* Por ejemplo, puedes darle fondo, bordes, posición, etc. */
+}
+
+.card2{
+  box-sizing: border-box;
+  padding: 4%;
+  margin: 10px;
+  background: #77544e;
+}
+
+.card2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 362px;
+  margin-block: 2rem;
+  gap: 1rem;
+  padding-bottom: 4em;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(4, auto); /* Crear 4 columnas con el mismo ancho */
+  gap: 10px; /* Espacio entre los elementos */
+}
+
+/* Estilos para el botón "erase-button" */
+.erase-button {
+  display: block; /* Convertir el botón en un bloque para ocupar todo el ancho */
+  margin: 10px auto; /* Margen superior e inferior 10px y margen izquierdo y derecho automáticos para centrar horizontalmente */
+  padding: 8px 102px; /* Padding interno para que el botón tenga un tamaño adecuado */
+  border: 3px solid #ccc;
+  background-color: #cc4d4d;
+  border-radius: 4px;
+  cursor: pointer;
 }

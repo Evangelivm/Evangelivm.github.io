@@ -1,3 +1,4 @@
+/*
 const currentURL = window.location.href;
 const urlOne = new URL(currentURL);
 const searchParams = new URLSearchParams(urlOne.search);
@@ -61,44 +62,36 @@ try {
     });
   }
 
-  // Add event listener to heart buttons after creating the cards
-  const heartButtons = document.querySelectorAll('.heart-button');
-  heartButtons.forEach(button => {
-    button.addEventListener('click', function() {
-      const card = button.closest('.card');
-      const genre = card.querySelector('.tag-red').textContent;
-      const title = card.querySelector('h2').textContent;
-      //const platformLinks = getPlatformLinks(item.streamingInfo);
-      const existingData = JSON.parse(localStorage.getItem('myData')) || {};
-      const lastKey = localStorage.getItem('lastKey');
-      let newIndex;
-
-      if (lastKey) {
-        newIndex = parseInt(lastKey) + 1;
-      } else {
-        newIndex = 1;
-      }
-
-      const newData = {
-        genre,
-        title
-        //platformLinks
-      };
-
-      existingData[newIndex] = newData;
-
-      localStorage.setItem('myData', JSON.stringify(existingData));
-      localStorage.setItem('lastKey', newIndex);
-
-      button.disabled = true; // Deshabilitar el botón después de hacer clic en él
+    // Add event listener to heart buttons after creating the cards
+    const heartButtons = document.querySelectorAll('.heart-button');
+    heartButtons.forEach((button, index) => {
+      button.addEventListener('click', function() {
+        const card = button.closest('.card');
+        const genre = card.querySelector('.tag-red').textContent;
+        const title = card.querySelector('h2').textContent;
+        const image = card.querySelector('.card__image').src;
+    
+        // Obtener el enlace de la imagen del póster correspondiente al botón clicado
+        //const posterURL = data.result[index].posterURLs['342'];
+    
+        const existingData = JSON.parse(localStorage.getItem('myData')) || [];
+    
+        const newData = {
+          genre,
+          title,
+          image, // Incluir el enlace del póster en el objeto newData
+        };
+    
+        existingData.push(newData);
+    
+        localStorage.setItem('myData', JSON.stringify(existingData));
+    
+        button.disabled = true; // Deshabilitar el botón después de hacer clic en él
+      });
     });
-  });
-} catch (error) {
-  console.error(error);
-}
-
-
-
+  } catch (error) {
+    console.error('Error loading JSON:', error);
+  }
 
 
 function createCard(item, container) {
@@ -164,11 +157,11 @@ function getPlatformLinks(streamingInfo) {
   return "No platform";
 }
 
+*/
 
 
 
 
-/*
 fetch("data.json")
   .then(response => response.json())
   .then(data => {
@@ -191,34 +184,28 @@ fetch("data.json")
 
     // Add event listener to heart buttons after creating the cards
     const heartButtons = document.querySelectorAll('.heart-button');
-    heartButtons.forEach(button => {
+    heartButtons.forEach((button, index) => {
       button.addEventListener('click', function() {
         const card = button.closest('.card');
         const genre = card.querySelector('.tag-red').textContent;
         const title = card.querySelector('h2').textContent;
-        //const platformLinks = getPlatformLinks(item.streamingInfo);
-
-        const existingData = JSON.parse(localStorage.getItem('myData')) || {};
-        const lastKey = localStorage.getItem('lastKey');
-        let newIndex;
-
-        if (lastKey) {
-          newIndex = parseInt(lastKey) + 1;
-        } else {
-          newIndex = 1;
-        }
-
+        const image = card.querySelector('.card__image').src;
+    
+        // Obtener el enlace de la imagen del póster correspondiente al botón clicado
+        //const posterURL = data.result[index].posterURLs['342'];
+    
+        const existingData = JSON.parse(localStorage.getItem('myData')) || [];
+    
         const newData = {
           genre,
           title,
-          //platformLinks
+          image, // Incluir el enlace del póster en el objeto newData
         };
-
-        existingData[newIndex] = newData;
-
+    
+        existingData.push(newData);
+    
         localStorage.setItem('myData', JSON.stringify(existingData));
-        localStorage.setItem('lastKey', newIndex);
-
+    
         button.disabled = true; // Deshabilitar el botón después de hacer clic en él
       });
     });
@@ -292,4 +279,4 @@ function getPlatformLinks(streamingInfo) {
   return "No platform";
 }
 
-*/
+
