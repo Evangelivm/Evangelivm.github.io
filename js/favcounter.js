@@ -1,14 +1,19 @@
-// Obtener los datos almacenados en el localStorage
+// Get the data stored in localStorage
 const existingData = JSON.parse(localStorage.getItem('myData'));
 
-// Verificar si existen datos almacenados
+// Check if there are any stored data
 if (existingData && existingData.length > 0) {
   const container = document.querySelector('.container2');
 
-  // Función para crear una tarjeta
+  // Function to create a card
   function createCardElement(data) {
     const card = document.createElement('div');
     card.classList.add('card2');
+
+    const eraseButton = document.createElement('button');
+    eraseButton.textContent = 'Erase';
+    eraseButton.classList.add('erase-button');
+    card.appendChild(eraseButton);
 
     const genre = document.createElement('p');
     genre.classList.add('tag-red');
@@ -24,27 +29,22 @@ if (existingData && existingData.length > 0) {
     image.alt = 'Card Image';
     card.appendChild(image);
 
-    const eraseButton = document.createElement('button');
-    eraseButton.textContent = 'Erase';
-    eraseButton.classList.add('erase-button');
-    card.appendChild(eraseButton);
-
-    // Agregar evento para eliminar la tarjeta al hacer clic en el botón "Erase"
+    // Add an event to delete the card when clicking the "Erase" button
     eraseButton.addEventListener('click', function () {
       const index = existingData.findIndex((item) => item.title === data.title && item.genre === data.genre && item.image === data.image);
       if (index !== -1) {
-        existingData.splice(index, 1); // Eliminar la tarjeta del array de datos
-        localStorage.setItem('myData', JSON.stringify(existingData)); // Actualizar los datos en el localStorage
-        rebuildCardList(); // Reconstruir la lista de tarjetas
+        existingData.splice(index, 1); // Remove the card from the data array
+        localStorage.setItem('myData', JSON.stringify(existingData)); // Update the data in localStorage
+        rebuildCardList(); // Rebuild the list of cards
       }
     });
 
     return card;
   }
 
-  // Función para reconstruir la lista de tarjetas
+  // Function to rebuild the list of cards
   function rebuildCardList() {
-    container.innerHTML = ''; // Limpiar el contenedor de tarjetas
+    container.innerHTML = ''; // Clear the card container
 
     existingData.forEach((data) => {
       const card = createCardElement(data);
@@ -52,7 +52,7 @@ if (existingData && existingData.length > 0) {
     });
   }
 
-  // Construir la lista de tarjetas inicial
+  // Build the initial list of cards
   rebuildCardList();
 } else {
   const container = document.querySelector('.container2');

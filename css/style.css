@@ -111,14 +111,12 @@ img {
   padding: 1rem;
   padding-bottom: 0px;
   padding-top: 0px;
-  /*margin-top: auto;*/
 }
 
 .card__footer {
   display: flex;
   padding: 1rem;
   padding-bottom: 30px;
-  /*margin-top: auto;*/
 }
 
 .user {
@@ -239,15 +237,17 @@ h1 {
   opacity: 1;
 }
 
-p{
+p {
   font-size: 0.83em;
 }
+
 .card__body3 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   gap: 10px;
 }
+
 .heart-button {
   width: 52px;
   height: 52px;
@@ -256,14 +256,17 @@ p{
   border: none;
   cursor: pointer;
 }
-.card__tag{
+
+.card__tag {
   grid-column: 1 / 3;
   grid-row: 1;
 }
-.card__button{
+
+.card__button {
   grid-column: 4;
   grid-row: 1;
 }
+
 .specific {
   position: relative;
   background-color: transparent;
@@ -290,10 +293,9 @@ p{
   transition: background-color 1s ease;
 }
 
-
 .my-header {
-  display: grid; /* Add grid layout */
-  grid-template-columns: repeat(2, 1fr); /* Create three equal columns */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   background-color: transparent;
   padding: 0 0 0 10px;
   text-align: center;
@@ -307,7 +309,7 @@ p{
   font-size: 50px;
 }
 
-.my-header__title2{
+.my-header__title2 {
   margin: 0;
   color: white;
   font-size: 30px;
@@ -317,21 +319,16 @@ p{
   padding-top: 3%;
 }
 
-.my-header__link{
-  text-decoration: none; /* Elimina el subrayado */
-  color: #000; /* Cambia el color del enlace (puedes ajustar el valor al que desees) */
-  
+.my-header__link {
+  text-decoration: none;
+  color: #000;
 }
 
-
-/* Estilos para el panel de favoritos */
 .favorites-panel {
   display: none;
-  /* Agrega aquí estilos para personalizar el panel */
-  /* Por ejemplo, puedes darle fondo, bordes, posición, etc. */
 }
 
-.card2{
+.card2 {
   box-sizing: border-box;
   padding: 4%;
   margin: 10px;
@@ -352,15 +349,14 @@ p{
 
 .container2 {
   display: grid;
-  grid-template-columns: repeat(4, auto); /* Crear 4 columnas con el mismo ancho */
-  gap: 10px; /* Espacio entre los elementos */
+  grid-template-columns: repeat(4, auto);
+  gap: 10px;
 }
 
-/* Estilos para el botón "erase-button" */
 .erase-button {
-  display: block; /* Convertir el botón en un bloque para ocupar todo el ancho */
-  margin: 10px auto; /* Margen superior e inferior 10px y margen izquierdo y derecho automáticos para centrar horizontalmente */
-  padding: 8px 102px; /* Padding interno para que el botón tenga un tamaño adecuado */
+  display: block;
+  margin: 10px auto;
+  padding: 8px 102px;
   border: 3px solid #ccc;
   background-color: #cc4d4d;
   border-radius: 4px;
