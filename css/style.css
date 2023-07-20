@@ -318,7 +318,15 @@ p {
   text-align: center;
   padding-top: 3%;
 }
-
+.my-header__title3 {
+  margin: 0;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: right;
+  text-align: center;
+  padding-left: 500%;
+}
 .my-header__link {
   text-decoration: none;
   color: #000;
