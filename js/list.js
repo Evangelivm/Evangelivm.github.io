@@ -95,3 +95,48 @@ try {
 } catch (error) {
   console.error('Error loading JSON:', error);
 }
+
+
+
+
+
+    const categoryURL = `https://streaming-availability.p.rapidapi.com/v2/search/title?title=${categoryValue}&country=us&show_type=movie&output_language=en`;
+    const categoryOptions = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '84b6a14863msh1ef8faf1704eeccp1c1c7djsn55f4804b3864',
+        'X-RapidAPI-Host': 'streaming-availability.p.rapidapi.com'
+      }
+    };
+
+    const categoryResponse = await fetch(categoryURL, categoryOptions);
+    const categoryData = await categoryResponse.json();
+
+    categoryData.result.forEach(item => {
+      createCard(item, container);
+    });
+  const heartButtons = document.querySelectorAll('.heart-button');
+  heartButtons.forEach((button, index) => {
+    button.addEventListener('click', function() {
+      const card = button.closest('.card');
+      const genre = card.querySelector('.tag-red').textContent;
+      const title = card.querySelector('h2').textContent;
+      const image = card.querySelector('.card__image').src;
+  
+      // Get the poster image link corresponding to the clicked button
+  
+      const existingData = JSON.parse(localStorage.getItem('myData')) || [];
+  
+      const newData = {
+        genre,
+        title,
+        image, // Include the poster link in the newData object
+      };
+  
+      existingData.push(newData);
+  
+      localStorage.setItem('myData', JSON.stringify(existingData));
+  
+      button.disabled = true; // Disable the button after clicking it
+    });
+  });
